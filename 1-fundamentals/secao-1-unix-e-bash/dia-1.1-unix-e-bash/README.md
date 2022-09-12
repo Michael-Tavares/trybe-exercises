@@ -25,3 +25,39 @@
 |    `man`     |exibe a página do manual de qualquer comando|
 |   `whatis`   |breve descrição de um comando|
 |   `apropos`  |busca por palavras-chave em um comando|
+|    `touch`   |cria um arquivo vazio com sua determinada extensão|
+
+
+## Exercícios
+
+# Parte I - Criação de arquivos e diretórios
+
+
+**Dica:** Para criação de arquivos vazios você pode utilizar o comando `touch nome-do-arquivo.extensao`.
+
+Utilizando o terminal, aplique o comando de criação de diretórios que você aprendeu, crie um diretório chamado `unix_tests` e navegue até ele.
+
+    1. Crie um arquivo de texto com o nome `trybe.txt`.
+
+    2. Crie uma cópia do arquivo trybe.txt com nome `trybe_backup.txt`. 
+
+    3. Renomeie o arquivo `trybe.txt`.
+
+    4. Dentro de unix_tests, crie um novo diretório chamado backup.
+
+    5. Mova o arquivo trybe_backup.txt para o diretório backup.
+
+    6. Dentro de unix_tests, crie um novo diretório chamado backup2.
+
+    7. Mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2.
+
+    8. Apague a pasta backup.
+
+    9. Renomeie a pasta backup2 para backup.
+
+    10. Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
+
+    11. Apague o diretório backup.
+
+    12. Limpe o terminal.
+Para os exercícios 14 e 15, crie, de forma manual na parte gráfica do seu sistema operacional (através do mouse), um arquivo de texto com o conteúdo abaixo, chamado skills.txt:
