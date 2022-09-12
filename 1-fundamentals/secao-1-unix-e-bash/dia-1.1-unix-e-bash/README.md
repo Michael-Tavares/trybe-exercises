@@ -43,21 +43,34 @@ Utilizando o terminal, aplique o comando de criação de diretórios que você a
  
   3. Renomeie o arquivo `trybe.txt`.
 
-4. Dentro de unix_tests, crie um novo diretório chamado backup.
+  4. Dentro de `unix_tests`, crie um novo diretório chamado `backup`.
 
-5. Mova o arquivo trybe_backup.txt para o diretório backup.
+  5. Mova o arquivo `trybe_backup.txt` para o diretório `backup`.
 
-6. Dentro de unix_tests, crie um novo diretório chamado backup2.
+  6. Dentro de `unix_tests`, crie um novo diretório chamado `backup2`.
 
-7. Mova o arquivo trybe_backup.txt da pasta backup para a pasta backup2.
+  7. Mova o arquivo `trybe_backup.txt` da pasta backup para a pasta `backup2`.
 
-8. Apague a pasta backup.
+  8. Apague a pasta `backup`.
 
-9. Renomeie a pasta backup2 para backup.
+  9. Renomeie a pasta `backup2` para `backup`.
 
-10. Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
+  10. Veja qual o path completo do diretório atual e liste todos os arquivos dentro dele.
 
-11. Apague o diretório backup.
+  11. Apague o diretório `backup`.
 
-12. Limpe o terminal.
-Para os exercícios 14 e 15, crie, de forma manual na parte gráfica do seu sistema operacional (através do mouse), um arquivo de texto com o conteúdo abaixo, chamado skills.txt:
+  12. Limpe o terminal.
+
+**Para os exercícios 14 e 15, crie, de forma manual na parte gráfica do seu sistema operacional (através do mouse), um arquivo de texto com o conteúdo abaixo, chamado `skills.txt:`**
+
+```
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+```
+
