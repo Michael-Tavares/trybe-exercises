@@ -6,7 +6,7 @@
 |     `>`      |redireciona a saída e substituí o conteúdo|
 |   `>>`       |anexa a saída e acrescenta ao conteúdo|
 |    `<`       |redireciona a entrada padrão de um arquivo|
-|   `|`        |concatena a saída de um comando com a entrada de outro|
+|    ``|``     |concatena a saída de um comando com a entrada de outro|
 |    `sort`    |ordena dados|
 |    `who`     |lista todos os usuários atualmente logados|
 |   `ls -lag`  |lista todos os arquivo e diretórios com suas permissões|
