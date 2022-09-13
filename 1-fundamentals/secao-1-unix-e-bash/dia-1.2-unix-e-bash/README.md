@@ -87,3 +87,8 @@
   8. Retome a execução do processo `sleep 100` em background com o comando `bg`.
 
   9. Termine a execução de todos os processos sleep (~~mate os processos~~).
+
+  
+  ### Comentário Adicional:
+
+  Com esses exercícios é capaz de atribuir a saída de um comando a entrada de outro, alterar permissões de arquivos e diretórios, criar e ~~matar~~ processos e também aprender sobre outros comandos que existe no Unix.
