@@ -1,0 +1,8 @@
+“Os primeiros 90% do código representam os primeiros 10% do tempo de desenvolvimento. Os 10% restantes do código é para mostrar aos outros os 90% do tempo de desenvolvimento. “
+Tom Cargill
+
+“Um computador permite que você faça mais erros mais rapidamente do que qualquer outra invenção da história da humanidade, com exceção das mãos e da tequila.”
+Mitch Ratcliffe
+
+“Há dois principais produtos que saem de Berkeley: LSD e UNIX.Nós não acreditamos que isso seja uma coincidência.”
+Jeremy S. Anderson
