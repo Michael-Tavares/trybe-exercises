@@ -1,0 +1,40 @@
+body {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 40px;
+    font-family: sans-serif;
+    background-color: aqua;
+    
+}
+
+h1 {
+    font-size: 65px;
+    color: orange;
+    text-decoration: underline;
+    text-align: center;
+}
+
+li {
+    background-color: rgb(182, 182, 216);
+}
+
+p {
+    font-weight: 3em;
+}
+
+.color-content {
+    background-color: rgb(170, 138, 189);
+    color: rgb(255, 1, 1);
+}
+
+#white {
+    background-color: white;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#black {
+    background-color: black;
+}
