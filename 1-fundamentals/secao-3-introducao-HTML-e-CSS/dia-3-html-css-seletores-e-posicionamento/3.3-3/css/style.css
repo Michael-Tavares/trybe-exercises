@@ -1,0 +1,55 @@
+body {
+    background-color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1, p {
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+.list {
+    text-align: center;
+}
+.list li {
+    display: inline;
+}
+.list li a {
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border: 20px;
+    border-style: none;
+}
+
+.list li:hover {
+    background-color: aliceblue;
+    transition: 2s;
+    border-style: groove;
+}
+
+.list li a:active {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.list-2 {
+    text-align: center;
+}
+
+.list-2 li {
+    padding: 5px;
+}
+
+ul, ol {
+    list-style: none;
+}
