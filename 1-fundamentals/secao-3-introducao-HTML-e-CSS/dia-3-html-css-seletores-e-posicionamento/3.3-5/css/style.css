@@ -1,0 +1,16 @@
+  body {
+    background-color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+.list-ordened li {
+    background-color: yellow;
+}
+
+ol.list-ordened li:nth-child(even) {
+    color: green;
+}
+
+ol.list-ordened li:nth-child(odd) {
+    text-transform: uppercase;
+}
