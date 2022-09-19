@@ -86,4 +86,37 @@ body {
     width: 60%;
     max-height: 30%;
     margin-left: 20%;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 2px solid white;
+}
+
+.content-second {
+    padding: 30px 30px;
+}
+
+.content-second h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}
+
+.content-second h3 {
+    color: white;
+    padding: 10px;
+}
+
+.punch {
+    float: left;
+    width: 30%;
+    height: 30%;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin: 10px;
+}
+
+.content-second p {
+    color: white;
+    font-size: 18px;
+    text-align: justify;
 }
