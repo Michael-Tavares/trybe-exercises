@@ -1,46 +1,45 @@
 body {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 .content-header {
-    background-color: aquamarine;
+    background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 200px;
+    height: 100%;
     display: inline-block;
 }
 
-.content-section {
-    background-color: red;
-    position: relative;
+.logo-image {
+    float: left;
+    max-width: 30%;
+    max-height: 30%;
+    margin-left: 5%;
+}
+
+.content-header h1{
     text-align: center;
-}
-.content-section h1 {
-    font-size: 40px;
-    text-align: center;
-    width: 50%;
-    margin-left: 10%;
-    margin-top: 3%;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-right: 17%;
+    color: white;
 }
 
-.content-section img {
-    position: relative;
-    height: 30%;
-    width: 30%;
-    float: right;
-    margin-right: 10%;
+.content-nav {
+    text-align: justify;
+    margin-top: 2%;
 }
 
-
-.content-section ul{
-    margin: 40px;
-    height: 100%;
-}
-
-.content-section nav ul li {
+.content-nav ul li {
     display: inline;
 }
 
-.content-section nav ul li a {
-    text-align: center;
-    background-color: beige;
+.content-nav ul li a {
+    color: white;
+    font-size: 30px;
+    background-color: rgb(0, 0, 0);
+    margin: 1.5%;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid white;
 }
