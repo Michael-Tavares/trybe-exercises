@@ -39,3 +39,27 @@ li em {
 .list-programming .java {
     background-color: pink;
 }
+
+.list-devallies li a{
+    text-decoration: none;
+}
+
+.list-devallies li:hover {
+    font-weight: bold;
+}
+
+.list-devallies .orange a {
+    color: orange;
+}
+
+.list-devallies .green a {
+    color: green;
+}
+
+.list-devallies .black a {
+    color: black;
+}
+
+.list-devallies .yellow a {
+    color: yellow;
+}
