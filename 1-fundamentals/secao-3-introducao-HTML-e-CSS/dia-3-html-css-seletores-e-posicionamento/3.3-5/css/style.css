@@ -23,3 +23,19 @@ ol.list-ordened li:nth-child(odd) {
     font-size: 40px;
     border: 1px solid black;
 }
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.list-programming .blue {
+    color: blue;
+}
+
+.list-programming .java {
+    background-color: pink;
+}
