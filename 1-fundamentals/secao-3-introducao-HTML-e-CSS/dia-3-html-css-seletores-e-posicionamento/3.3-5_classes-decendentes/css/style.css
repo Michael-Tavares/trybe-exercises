@@ -1,0 +1,66 @@
+  body {
+    background-color: blanchedalmond;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+  }
+
+.list-ordened li {
+    background-color: yellow;
+}
+
+ol.list-ordened li:nth-child(even) {
+    color: green;
+}
+
+ol.list-ordened li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+.header {
+    color: red;
+}
+
+.header em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+.list-programming .blue {
+    color: blue;
+}
+
+.list-programming .java {
+    background-color: pink;
+}
+
+.list-devallies li a{
+    text-decoration: none;
+}
+
+.list-devallies li:hover {
+    font-weight: bold;
+}
+
+.list-devallies .orange a {
+    color: orange;
+}
+
+.list-devallies .green a {
+    color: green;
+}
+
+.list-devallies .black a {
+    color: black;
+}
+
+.list-devallies .yellow a {
+    color: yellow;
+}
