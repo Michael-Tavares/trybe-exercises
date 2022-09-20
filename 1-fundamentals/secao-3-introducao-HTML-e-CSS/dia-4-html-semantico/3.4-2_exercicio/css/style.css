@@ -120,3 +120,10 @@ body {
     font-size: 18px;
     text-align: justify;
 }
+
+.center-span{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
