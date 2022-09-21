@@ -220,6 +220,10 @@ body {
   color: white;
 }
 
-.a-hover:hover {
-  font-size: 30px;
+.content-references {
+  background-color: blue;
+}
+
+.content-references h2 {
+  color: white;
 }
