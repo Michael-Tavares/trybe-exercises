@@ -4,7 +4,7 @@ body {
 }
 
 .content-header {
-  background-color: rgb(248, 185, 185);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   height: 100%;
   max-width: 80%;
@@ -16,43 +16,45 @@ body {
   float: left;
   max-width: 20%;
   max-height: 20%;
-  margin-left: 5%;
+  margin-left: 8%;
 }
 
 .content-header h1 {
   text-align: center;
-  font-size: 50px;
+  font-size: 55px;
   margin-top: 5%;
-  margin-right: 31%;
+  margin-right: 8%;
   color: white;
 }
 
 .content-nav {
   text-align: justify;
-  margin-top: 2%;
+  margin-top: 6%;
   width: 100%;
   max-width: 80%;
+  margin-left: 16%;
   background-color: rgb(0, 0, 0);
 }
 
 .content-nav ul {
-  background-color: azure;
+  background-color: rgb(0, 0, 0);
   width: 100%;
   max-width: 80%;
   margin-left: 25%;
+  
 }
 
 .content-nav ul li {
   display: inline;
   width: 100%;
   max-width: 80%;
-  background-color: blue;
+  background-color: rgb(0, 0, 0);
 }
 
 .content-nav ul li a {
   color: white;
-  font-size: 20px;
-  background-color: rgb(122, 54, 54);
+  font-size: 28px;
+  background-color: rgb(0, 0, 0);
   margin: 1.5%;
   text-decoration: none;
   padding: 8px;
@@ -78,18 +80,18 @@ body {
   color: white;
   text-align: center;
   font-style: italic;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .content-origin h3 {
-  font-size: 23px;
+  font-size: 27px;
   color: white;
 }
 
 .content-origin p {
   text-align: justify;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .content-origin ul li {
@@ -111,19 +113,19 @@ body {
 }
 
 .content-second {
-  padding: 30px 30px;
+  padding: 20px 20px;
 }
 
 .content-second h2 {
   text-align: center;
   color: white;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .content-second h3 {
   color: white;
   padding: 10px;
-  font-size: 23px;
+  font-size: 27px;
 }
 
 .punch {
@@ -137,14 +139,14 @@ body {
 
 .content-second p {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   padding: 10px;
 }
 
 .center-span {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   font-style: italic;
 }
@@ -156,13 +158,13 @@ body {
 .content-third h2 {
   color: white;
   text-align: center;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .content-third h3 {
   color: white;
   padding: 10px;
-  font-size: 23px;
+  font-size: 27px;
 }
 
 .vision-image {
@@ -176,7 +178,95 @@ body {
 
 .content-third p {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-align: justify;
   padding: 10px;
+}
+
+.content-galery {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  padding: 20px 20px;
+
+}
+
+.content-galery h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 40px;
+}
+
+.content-galery img {
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 100%;
+  height: 100%;
+  max-width: 43%;
+  max-height: 43%;
+  display: inline-block;
+  border-radius: 5%;
+  border: 2px solid white;
+}
+
+.content-galery h2 {
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 27px;
+}
+
+.content-galery a {
+  color: white;
+}
+
+.content-references {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  max-width: 60%;
+  margin-left: 20%;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.content-references h2 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 2%;
+}
+
+.content-references ul li {
+  color: white;
+  list-style: none;
+  text-align: justify;
+  margin-left: 18%;
+  font-size: 20px;
+  font-style: italic;
+  margin-top: 1%;
+}
+
+.content-references ul li a {
+  color: white;
+  font-size: 20px;
+}
+
+.content-footer {
+  margin-top: 3%;
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  text-align: center;
+}
+
+.content-footer h4 {
+  color: white;
+  font-size: 20px;
+}
+
+.content-footer h4 a {
+  color: white;
+}
+
+.content-logo{
+  max-width: 70%;
+  max-height: 70%;
+  margin: 10px;
 }

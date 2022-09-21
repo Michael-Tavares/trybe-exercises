@@ -12,14 +12,15 @@
 </head>
 
 <body>
-    <header class="content-header">
+    <header class="content-header" id="mainpage">
         <img class="logo-image" src="./images/mantis-5.png" alt="Stomatopoda mantis se preparando para o soco">
         <h1>Soco a 80km/h: Conheça o Stomatopoda.</h1>
         <nav class="content-nav">
             <ul>
-                <li><a href="">Página Inicial</a></li>
-                <li><a href="">Conteúdo</a></li>
-                <li><a href="">Sobre</a></li>
+                <li><a href="#mainpage">Página Inicial</a></li>
+                <li><a href="#content">Conteúdo</a></li>
+                <li><a href="#galery">Galeria</a></li>
+                <li><a href="#about">Sobre</a></li>
             </ul>
         </nav>
     </header>
@@ -40,15 +41,12 @@
                 <li>Subclasse: Hoplocarida</li>
                 <li>Ordem: Stomatopoda</li>
             </ul>
-            <img class="origin-image"
-                src="./images/mantis-1.jpg"
-                alt="imagem do tamarutacas">
+            <img class="origin-image" src="./images/mantis-1.jpg" alt="imagem do tamarutacas">
         </article>
-        <article class="content-second">
+        <article class="content-second" id="content">
             <h2>E esse soco aí?</h2>
             <h3><s>Floyd Mayweather</s> deseja ser seu aprendiz</h3>
-            <img src="./images/mantis-2.gif"
-                alt="Stomatopoda dando um soco em uma concha" class="punch">
+            <img src="./images/mantis-2.gif" alt="Stomatopoda dando um soco em uma concha" class="punch">
             <p>Como aprendido na <s>DC Comics</s> quanto maior a velocidade, maior a força. Isto faz com o que este
                 animal produza uma força 2,5 mil vezes maior que seu próprio peso. <br> Cientificamente, é explicado
                 pela fisologia do animal: <br><br></p>
@@ -67,20 +65,46 @@
         <article class="content-third">
             <h2>Não apenas de soco, sua visão</h2>
             <h3>Aqueles olhos... <s>só para você</s></h3>
-            <img src="./images/mantis-3.jpg"
-                alt="imagem resaltando os olhos do Stomatopoda" class="vision-image">
+            <img src="./images/mantis-3.jpg" alt="imagem resaltando os olhos do Stomatopoda" class="vision-image">
             <p>É uma das coisas mais incríveis que você vai ler hoje! Para começar eles podem detectar células
                 cancerosas com os olhos, isso é o que um grupo de Pesquisadores da Univerdiade de Queensland detectaram,
-                isso porquê os olhos do mantis têm a capacidade de detectar luz polarizada que reflete de forma dirente
-                do tecido canceroso e saudável, ou seja, antes que apareçam como tumores visíveis. <br><br>
+                isso porquê os olhos do mantis têm a capacidade de detectar luz polarizada que reflete de forma diferente
+                do tecido canceroso e saudável, ou seja, antes que apareçam como tumores visíveis. <br>
                 O mantis tem de 12 a 16 fotorreceptores de cores diferentes, três vezes mais que um humano. Algo que
-                traduzindo pode-se definir como uma <em>bomba termonuclear de luz, cores e beleza</em>.<br><br>
-                Com isso acredita-se que o Mantis é o animal com os olhos mais complexos já descoberto.
+                traduzindo pode-se definir como uma <em>bomba termonuclear de luz, cores e beleza</em>.<br>
+                Com isso o Mantis é o animal com os olhos mais complexos já descoberto, o tornando superiror a visão
+                das borboletas. <br> Algo muito interessante é que ele pode girar seus olhos de forma independente para 
+                examinar ao seu redor e isso faz com o que dê ao mantis uma capacidade de sobrevivencia muito maior,
+                podendo viver tranquilamente em um ambiente que varia a luz, claro ou escuro, e permite com que eles
+                vejam e avaliem a distância de objetos brilhantes ou translúcidos.
             </p>
         </article>
-
-
+        <section class="content-galery" id="galery">
+            <h1>Galeria de Imagens do Mantis</h1>
+            <img src="./images/mantis-6.jpg" alt="imagem do mantis demonstrando sua beleza">
+            <img src="./images/mantis-7.jpg" alt="imagem do mantis demonstrando seu corpo de lado">
+            <img src="./images/mantis-8.jpg" alt="imagem do mantis retirada de uma camera macro">
+            <img src="./images/mantis-9.jpg" alt="imagem macro dos olhos do mantis">
+            <h2>Você pode conferir vários momentos do Mantis neste <a href="https://www.youtube.com/watch?v=E0Li1k5hGBE" target="_blank">video.</a></h2>
+        </section>
     </main>
+    <aside class="content-references">
+        <h2>Referências utilizadas no artigo:</h2>
+        <ul>
+            <li>"Os olhos mais incríveis da natureza", via:<a href="https://www.nationalgeographic.com/science/article/natures-most-amazing-eyes-just-got-a-bit-weirder" target="_blank"> National Geographic</a></li>
+            <li>"14 curiosidades sobre o Mantis", via:<a href="https://factanimal.com/mantis-shrimp/#easy-footnote-bottom-3-1124" target="_blank"> Fact Animal</a></li>
+            <li>"Fatos do camarão Mantis (Stomatopoda)", via:<a href="https://www.thoughtco.com/mantis-shrimp-facts-4582442" target="_blank"> ThoughtCo.</a></li>
+            <li>"Camarão mantis: o animal com o soco mais potente da natureza capaz de destruir aquários", via:<a href="https://www.hypeness.com.br/2021/08/camarao-mantis-o-animal-com-o-soco-mais-potente-da-natureza-capaz-de-destruir-aquarios/" target="_blank"> Hypeness</a></li>
+            <li>"Por que o camarão Mantis é meu novo animal favorito", via:<a href="https://theoatmeal.com/comics/mantis_shrimp" target="_blank"> The OATMEAL</a></li>
+            <li>"Stomatopoda", via:<a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank"> Wikipedia</a></li>
+        </ul>
+    </aside>
+    <footer class="content-footer" id="about">
+        <h4>Projeto desenvolvido por Michael Douglas em 2022. Seguindo um exercício da <a href="https://www.betrybe.com/" target="_blank">Trybe.</a></h4>
+        <a href="https://www.linkedin.com/in/pqmaic/" target="_blank"><img src="./images/linkedin-logo.png" alt="logo do linkedin" class="content-logo"></a>
+        <a href="https://github.com/Michael-Tavares" target="_blank"><img src="./images/github-logo.png" alt="logo do github" class="content-logo"></a>
+    </footer>
+
 </body>
 
 </html>
