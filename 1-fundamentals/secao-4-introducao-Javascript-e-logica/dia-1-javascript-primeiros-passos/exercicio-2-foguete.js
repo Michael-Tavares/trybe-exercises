@@ -40,6 +40,26 @@ lucro = valorVenda - valorCustoTotal (lucro de um produto);
 
 */
 
+const custoProduto = 50;
+const valorVenda = 200;
+let lucro1000;
+
+if(custoProduto == 50 && valorVenda == 200){
+  let impost = custoProduto * 0.2;
+  let valorCustoTotal = custoProduto + impost;
+  let lucro = valorVenda - valorCustoTotal;
+  lucro1000 = lucro * 1000;
+  console.log('O lucro total de 1000 unidades é: ' +lucro1000);
+}else if(custoProduto < 0 || valorVenda < 0){
+  console.log('Digite um valor maior que 0');
+}else{
+  console.log('Digite um valor.');
+}
+
+
+
+
+
 /*
 Utilize if/else para fazer um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR.
