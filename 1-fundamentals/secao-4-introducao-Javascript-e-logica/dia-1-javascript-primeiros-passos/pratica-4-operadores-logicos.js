@@ -34,11 +34,22 @@ if(currentHour >= 22){
 
 console.log(message);
 
-
-
-
 /*
-O operador booleano || retorna o resultado caso uma das condições sejam verdadeiras, 
+O operador booleano || precisa-se de apenas uma das condiçoes sejam verdadeiras, caso ambas sejam falsas o resultado é falso! 
 
 
+                    console.log(true || true); // true
+                    console.log(true || false); // true
+                    console.log(false || true); // true
+                    console.log(false || false); // false
+
+Exercício:
 */
+
+let weekDay = 'Domingo';
+
+if(weekDay == 'segunda-feira' || weekDay == 'terca-feira' || weekDay == 'quarta-feira' || weekDay == 'quinta-feira' || weekDay == 'sexta-feira'){
+  console.log('Oba, mais sum dia de aprendizado na Trybe!');
+}else{
+  console.log('Finalmente, descanso merecido!');
+}
