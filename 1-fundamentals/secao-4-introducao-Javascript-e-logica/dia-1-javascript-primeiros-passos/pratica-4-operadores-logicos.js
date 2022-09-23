@@ -53,3 +53,7 @@ if(weekDay == 'segunda-feira' || weekDay == 'terca-feira' || weekDay == 'quarta-
 }else{
   console.log('Finalmente, descanso merecido!');
 }
+
+/*
+O operador booleano ! Este operador inverte o que a variável retornaria, por exemplo se declarar uma variável de 1 + 1 = 2 será true, no entanto se colocarmos o ! retorna false. As possibilidades são inúmeras, podendo ser usado em strings, numbers, boolean, valores nulos e tudo mais!
+*/
