@@ -50,9 +50,22 @@ let inss;
 let ir;
 let descontoIr;
 
-
-
-if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+if(salarioBruto <= 1556.94){
+  inss = (salarioBruto * 8) / 100;
+  salarioBase = salarioBruto - inss;
+    if(salarioBase <= 1903.98){
+      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, você é isento de Imposto de Renda, tornando seu salário de R$ ${salarioBase}`);
+    }
+}else if(salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+  inss = (salarioBruto * 9) / 100;
+  salarioBase = salarioBruto - inss;
+    if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
+      ir = (salarioBase * 7.5) / 100;
+      descontoIr = ir - 142.8;
+      salarioLiquido = salarioBase - descontoIr;
+      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, tornando seu salário base de R$ ${salarioBase} e nele foi descontado R$ ${descontoIr} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido}`);
+    }
+}else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
   inss = (salarioBruto * 11) / 100;
   salarioBase = salarioBruto - inss;
     if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
@@ -61,8 +74,7 @@ if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
       salarioLiquido = salarioBase - descontoIr;
       console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, tornando seu salário base de R$ ${salarioBase} e nele foi descontado R$ ${descontoIr} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido}`);
     }
-  
-} 
+}
 
 
 
