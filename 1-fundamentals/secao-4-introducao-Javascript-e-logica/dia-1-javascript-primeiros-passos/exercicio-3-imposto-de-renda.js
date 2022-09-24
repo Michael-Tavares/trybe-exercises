@@ -43,37 +43,61 @@ O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 
 
 Resultado: R$ 2.612,55.
 */
-let salarioBruto = 3000;
+let salarioBruto = 10000;
 let salarioBase;
 let salarioLiquido;
 let inss;
 let ir;
 let descontoIr;
 
-if(salarioBruto <= 1556.94){
+if (salarioBruto >= 1000 && salarioBruto <= 1556.94) {
   inss = (salarioBruto * 8) / 100;
   salarioBase = salarioBruto - inss;
-    if(salarioBase <= 1903.98){
-      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, você é isento de Imposto de Renda, tornando seu salário de R$ ${salarioBase}`);
-    }
-}else if(salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
+  if (salarioBase <= 1903.98) {
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, você é isento de Imposto de Renda, tornando seu salário de R$ ${salarioBase.toFixed(2)}`);
+  }
+} else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
   inss = (salarioBruto * 9) / 100;
   salarioBase = salarioBruto - inss;
-    if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
-      ir = (salarioBase * 7.5) / 100;
-      descontoIr = ir - 142.8;
-      salarioLiquido = salarioBase - descontoIr;
-      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, tornando seu salário base de R$ ${salarioBase} e nele foi descontado R$ ${descontoIr} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido}`);
-    }
-}else if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+  if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+    ir = (salarioBase * 7.5) / 100;
+    descontoIr = ir - 142.8;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  }
+} else if (salarioBruto >= 2594.93 && salarioBruto < 5189.82) {
   inss = (salarioBruto * 11) / 100;
   salarioBase = salarioBruto - inss;
-    if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
-      ir = (salarioBase * 7.5) / 100;
-      descontoIr = ir - 142.8;
-      salarioLiquido = salarioBase - descontoIr;
-      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, tornando seu salário base de R$ ${salarioBase} e nele foi descontado R$ ${descontoIr} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido}`);
-    }
+  if (salarioBase >= 1903.99 && salarioBase <= 2826.65) {
+    ir = (salarioBase * 7.5) / 100;
+    descontoIr = ir - 142.8;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  } else if (salarioBase >= 2826.66 && salarioBase <= 3751.05) {
+    ir = (salarioBase * 15) / 100;
+    descontoIr = ir - 354.8;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  } else if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+    ir = (salarioBase * 22.5) / 100;
+    descontoIr = ir - 636.13;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  }
+} else if (salarioBruto >= 5189.82) {
+  inss = 570.88
+  salarioBase = salarioBruto - inss;
+  if (salarioBase >= 3751.06 && salarioBase <= 4664.68) {
+    ir = (salarioBase * 22.5) / 100;
+    descontoIr = ir - 636.13;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  } else if (salarioBase >= 4664.68) {
+    ir = (salarioBase * 27.5) / 100;
+    descontoIr = ir - 869.36;
+    salarioLiquido = salarioBase - descontoIr;
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto.toFixed(2)}, nele foi descontado R$ ${inss.toFixed(2)} de INSS, tornando seu salário base de R$ ${salarioBase.toFixed(2)} e nele foi descontado R$ ${descontoIr.toFixed(2)} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido.toFixed(2)}`);
+  }
 }
 
 
