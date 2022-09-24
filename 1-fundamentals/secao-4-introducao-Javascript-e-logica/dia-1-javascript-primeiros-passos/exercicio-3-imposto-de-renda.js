@@ -43,25 +43,42 @@ O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 
 
 Resultado: R$ 2.612,55.
 */
-let salarioBruto = 1800;
+let salarioBruto = 3000;
+let salarioBase;
+let salarioLiquido;
 let inss;
 let ir;
 let descontoIr;
-let desconto;
-let salarioLiquido;
 
-if(salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
-  if(salarioBruto >= 1903.99 && salarioBruto <= 2826.65 ){
+
+
+if(salarioBruto >= 2594.93 && salarioBruto <= 5189.82){
+  inss = (salarioBruto * 11) / 100;
+  salarioBase = salarioBruto - inss;
+    if(salarioBase >= 1903.99 && salarioBase <= 2826.65){
+      ir = (salarioBase * 7.5) / 100;
+      descontoIr = ir - 142.8;
+      salarioLiquido = salarioBase - descontoIr;
+      console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS, tornando seu salário base de R$ ${salarioBase} e nele foi descontado R$ ${descontoIr} de Imposto de Renda e com isso o seu salário líquido é R$ ${salarioLiquido}`);
+    }
+  
+} 
+
+
+
+
+/*
+logica errada, depois que li o exemplo de como faz, percebi que alterei a forma de calcular o imposto de renda sobre o salario bruto e nao sobre o salario base 
+if(salarioBruto >= 1903.99 && salarioBruto <= 2826.65 ){
     ir = (salarioBruto * 7.5) / 100;
     descontoIr = ir + 142.80;
     inss = (salarioBruto * 9) / 100;
     desconto = inss + descontoIr;
     salarioLiquido = salarioBruto - desconto;
-    console.log(salarioLiquido);
+    console.log(`Olá, o seu salário bruto é R$ ${salarioBruto}, nele foi descontado R$ ${descontoIr} de imposto de renda, R$ ${inss} de INSS e com isso o seu salário líquido foi de R$ ${salarioLiquido}`);
   }else{
     inss = (salarioBruto * 9) / 100;
     salarioLiquido = salarioBruto - inss;
-    console.log(salarioLiquido);
+    console.log(`Olá, o seu salário bruto é de R$ ${salarioBruto}, nele foi descontado R$ ${inss} de INSS e com isso seu salário líquido foi de R$ ${salarioLiquido} `);
   }
-  
-}
+*/
