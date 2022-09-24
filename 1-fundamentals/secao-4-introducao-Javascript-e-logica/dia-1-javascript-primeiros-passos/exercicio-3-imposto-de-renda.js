@@ -43,13 +43,19 @@ O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 
 
 Resultado: R$ 2.612,55.
 */
-let salarioBruto = 1900;
+let salarioBruto = 2000;
 let inss;
 let ir;
+let descontoIr;
+let descontoInss;
 
 if(salarioBruto >= 1556.95 && salarioBruto <= 2594.92){
-  inss = salarioBruto * 0.90;
-  console.log(inss);
-  salarioBruto = inss;
-  console.log(salarioBruto);
+  if(salarioBruto >= 1903.99 && salarioBruto <= 2826.65 ){
+    ir = (salarioBruto * 7.5) / 100;
+    descontoIr = ir + 142.80;
+    console.log(descontoIr);
+  }
+  inss = (salarioBruto * 9) / 100;
+  descontoInss = salarioBruto - inss;
+  console.log(descontoInss);
 }
