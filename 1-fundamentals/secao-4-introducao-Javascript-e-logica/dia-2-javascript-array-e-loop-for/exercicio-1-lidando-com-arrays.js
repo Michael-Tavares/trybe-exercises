@@ -1,4 +1,4 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 10];
 
 /*Percorra o array imprimindo todos os valores nele contidos com a função console.log(); 
 
@@ -64,7 +64,7 @@ if(media >= 20){
 
 
 /*Utilizando for, descubra qual o maior valor contido no array e imprima-o;
-*/
+
 let maior = 0;
 
 for(let index = 0; index < numbers.length; index += 1){
@@ -74,3 +74,24 @@ for(let index = 0; index < numbers.length; index += 1){
 }
 
 console.log(maior);
+*/
+
+
+
+/*Descubra quantos valores ímpares existem no array e imprima o resultado. Caso não exista nenhum, imprima a mensagem: “nenhum valor ímpar encontrado”;
+
+*/
+
+num = 0;
+
+for(let index = 0; index < numbers.length; index += 1){
+  if(numbers[index] % 2 !== 0){
+    num += 1;
+  }
+}  
+
+if(num !== 0){
+  console.log(num);
+}else{
+  console.log('Nenhum valor encontrado');
+}
