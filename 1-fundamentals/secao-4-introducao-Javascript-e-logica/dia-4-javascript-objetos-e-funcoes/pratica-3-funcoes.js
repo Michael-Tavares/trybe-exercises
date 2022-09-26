@@ -52,6 +52,8 @@ function comparacao(a, b){
 comparacao(40, 50);
 
 
+//Faça um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
+
 function comparacaoTresNumeros(a, b, c){
   if(a > b && a > c){
     return console.log(a + ' é maior que ' + b + ' e maior que ' + c)
@@ -65,3 +67,18 @@ function comparacaoTresNumeros(a, b, c){
 }
 
 comparacaoTresNumeros(3, 2, 5);
+
+
+//Faça um programa que, dado um valor recebido como parâmetro, retorne “positive” se esse valor for positivo, “negative” se for negativo, e caso não seja nem positivo e nem negativo retorne “zero”.
+
+function check(number){
+  if(number > 0){
+    return console.log('Positive');
+  }else if(number < 0){
+    return console.log('Negative');
+  }else{
+    return console.log('Zero');
+  }
+}
+
+check(-10);
