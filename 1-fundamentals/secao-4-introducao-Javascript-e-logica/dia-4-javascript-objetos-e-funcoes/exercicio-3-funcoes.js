@@ -58,3 +58,24 @@ function menorValor(numeros){
 }
 
 console.log(menorValor([2, 4, 6, 7, 10, 0, -3]));
+
+
+/*
+Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+
+Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];.
+
+Valor esperado no retorno da função: Fernanda.
+*/
+
+function maiorCaracteres(nomes){
+  let caracteres = nomes[0];
+  for(let index in nomes){
+    if(caracteres.length < nomes[index].length){
+      caracteres = nomes[index];
+    }
+  }
+  return caracteres;
+}
+
+console.log(maiorCaracteres(['José', 'Lucas', 'Nádia', 'Cairo', 'Joana', 'Michael']));
