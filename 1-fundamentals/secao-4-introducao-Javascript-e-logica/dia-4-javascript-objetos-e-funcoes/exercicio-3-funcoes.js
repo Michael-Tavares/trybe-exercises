@@ -18,3 +18,23 @@ function palindrome(verifica){
 console.log(palindrome('uva'));
 console.log(palindrome('ana'));
 console.log(palindrome('amarelo'));
+
+
+/*Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+Array de teste: [2, 3, 6, 7, 10, 1];.
+
+Valor esperado no retorno da função: 4.
+*/
+
+function maiorValor(numeros){
+  let maior = 0;
+  for(let index in numeros){
+    if(numeros[maior] < numeros[index]){
+      maior = index;
+    }
+  }
+  return maior;
+}
+
+console.log(maiorValor([2, 3, 6, 7, 10, 1]));
