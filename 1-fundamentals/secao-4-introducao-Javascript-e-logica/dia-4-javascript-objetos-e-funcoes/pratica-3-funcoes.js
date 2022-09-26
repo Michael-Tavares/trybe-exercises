@@ -35,3 +35,18 @@ function resto(a, b){
   return console.log(a % b);
 }
 resto(100, 10);
+
+
+//Faça um programa que retorne o maior de dois números. Defina, no começo do programa, duas constantes com os valores que serão comparados.
+
+function comparacao(a, b){
+  if(a > b){
+    return console.log(a + ' é maior que ' + b)
+  }else if(a < b){
+    return console.log(a + ' é menor que ' + b)
+  }else{
+    return console.log(a + ' é igual a ' + b)
+  }
+}
+
+comparacao(40, 50);
