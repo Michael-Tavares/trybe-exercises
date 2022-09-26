@@ -50,3 +50,18 @@ function comparacao(a, b){
 }
 
 comparacao(40, 50);
+
+
+function comparacaoTresNumeros(a, b, c){
+  if(a > b && a > c){
+    return console.log(a + ' é maior que ' + b + ' e maior que ' + c)
+  }else if(b > a && b > c){
+    return console.log(b + ' é maior que ' + a + ' e maior que ' + c)
+  }else if(c > a && c > b){
+    return console.log(c + ' é maior que ' + a + ' e maior que ' + b)
+  }else{
+    return console.log('Todos os números são identicos.')
+  }
+}
+
+comparacaoTresNumeros(3, 2, 5);
