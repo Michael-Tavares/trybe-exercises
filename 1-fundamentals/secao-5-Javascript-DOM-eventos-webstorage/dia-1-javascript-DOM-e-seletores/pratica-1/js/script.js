@@ -9,3 +9,9 @@ secondParagraph.innerText = 'Uma boa síntese';
 
 let subtitle = document.getElementById('subtitle');
 subtitle.style.backgroundColor = 'blue';
+
+let classP = document.getElementsByClassName('content-p');
+classP[0].innerHTML = 'Um bom filme';
+
+let sub = document.getElementsByTagName('h4');
+sub[0].style.color = 'white';
