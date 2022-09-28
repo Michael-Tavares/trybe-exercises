@@ -10,3 +10,10 @@ Aqui você vai modificar os elementos já existentes utilizando apenas as funç�
 5. Crie e execute uma função que modifique o texto da primeira tag <p> para maiúsculo.
 6. Crie e execute uma função que exiba o conteúdo de todas as tags <p> no console.
 */
+
+function alteraTexto() {
+  let textP = document.querySelectorAll('p')[1];
+  return textP.innerText = 'Apenas vivo';
+}
+
+alteraTexto();
