@@ -23,3 +23,15 @@ function alteraCor(element, color) {
 }
 
 alteraCor('.main-content', 'rgb(76,164,109)');
+
+function alteraCorCenter(element, color) {
+  document.querySelector(element).style.backgroundColor = color;
+}
+
+alteraCorCenter('.center-content', 'rgb(255,255,255)');
+
+function alteraTextoH1(text) {
+  document.getElementsByClassName('title')[0].innerText = text;
+}
+
+alteraTextoH1('Exercício - JavaScript')
