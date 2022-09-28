@@ -35,3 +35,18 @@ function alteraTextoH1(text) {
 }
 
 alteraTextoH1('Exercício - JavaScript')
+
+function alteraTextoP(element, text) {
+  document.querySelector(element).innerText = text;
+}
+
+alteraTextoP('p', 'TEXTO PADRÃO DO NOSSO SITE');
+
+function exibeP(p, index) {
+  let exibe = document.querySelectorAll(p)[index].innerText;
+  return exibe;
+}
+
+console.log(exibeP('p', '0'));
+console.log(exibeP('p', '1'));
+console.log(exibeP('p', '2'));
