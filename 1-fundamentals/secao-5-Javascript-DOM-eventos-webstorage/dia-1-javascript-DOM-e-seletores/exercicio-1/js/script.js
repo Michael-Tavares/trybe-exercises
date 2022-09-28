@@ -17,3 +17,9 @@ function alteraTexto() {
 }
 
 alteraTexto();
+
+function alteraCor(element, color) {
+  document.querySelector(element).style.backgroundColor = color;
+}
+
+alteraCor('.main-content', 'rgb(76,164,109)');
