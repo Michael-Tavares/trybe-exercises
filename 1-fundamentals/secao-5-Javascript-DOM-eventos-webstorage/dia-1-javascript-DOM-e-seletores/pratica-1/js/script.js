@@ -14,4 +14,4 @@ let classP = document.getElementsByClassName('content-p');
 classP[0].innerHTML = 'Um bom filme';
 
 let sub = document.getElementsByTagName('h4');
-sub[0].style.color = 'white';
+sub[0].style.color = 'white'
