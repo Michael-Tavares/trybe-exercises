@@ -58,5 +58,15 @@ for (let index in number) {
 for (let index = 1; index <= 3; index += 1) {
   let tagH3 = document.createElement('h3');
   tagH3.innerHTML = 'Olá'+ ' ' + index;
+  tagH3.className = 'description';
   tagMain.appendChild(tagH3);
 }
+
+
+//Agora que você criou muita coisa, vamos fazer algumas alterações e remoções:
+
+//Adicione a classe title na tag h1 criada;
+tagH1.className = 'title';
+
+//Adicione a classe description nas 3 tags h3 criadas;
+tagH3.className = 'description';
