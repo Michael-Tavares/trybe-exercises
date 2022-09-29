@@ -34,3 +34,10 @@ tagMain.appendChild(secondTagSection);
 let thirdTagSection = document.createElement('section');
 thirdTagSection.className = 'right-content';
 tagMain.appendChild(thirdTagSection);
+
+//Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
+
+let image = document.createElement('img');
+image.src = 'https://picsum.photos/200'
+image.className = 'small-image';
+secondTagSection.appendChild(image);
