@@ -69,4 +69,20 @@ for (let index = 1; index <= 3; index += 1) {
 tagH1.className = 'title';
 
 //Adicione a classe description nas 3 tags h3 criadas;
-tagH3.className = 'description';
+//tagH3.className = 'description';
+
+//Remova a section criado no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+tagMain.removeChild(secondTagSection);
+
+
+//Centralize a section criado no passo 6 (aquele que possui a classe right-content). Dica: para centralizar, basta configurar o margin-right: auto da section;
+thirdTagSection.style.marginRight = 'auto';
+
+
+//Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+tagMain.style.backgroundColor = 'green';
+
+
+//Remova os dois últimos elementos (nove e dez) da lista criada no passo 8.
+listNoOrdened.lastChild.remove();
+listNoOrdened.lastChild.remove();
