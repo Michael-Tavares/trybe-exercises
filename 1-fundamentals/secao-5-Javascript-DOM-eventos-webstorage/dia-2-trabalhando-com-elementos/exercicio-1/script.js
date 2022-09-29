@@ -16,3 +16,9 @@ bodyTag.appendChild(tagMain);
 const tagSection = document.createElement('section');
 tagSection.className = 'center-content';
 tagMain.appendChild(tagSection);
+
+//Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+let tagP = document.createElement('p');
+tagP.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam, quo sapiente aliquid consequatur repellat! Officia cum autem in eum vel cupiditate, debitis rerum harum similique reiciendis commodi itaque deleniti!';
+tagSection.appendChild(tagP);
