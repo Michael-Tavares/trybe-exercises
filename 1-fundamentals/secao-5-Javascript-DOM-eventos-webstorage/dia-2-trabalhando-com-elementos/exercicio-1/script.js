@@ -22,3 +22,15 @@ tagMain.appendChild(tagSection);
 let tagP = document.createElement('p');
 tagP.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur nam, quo sapiente aliquid consequatur repellat! Officia cum autem in eum vel cupiditate, debitis rerum harum similique reiciendis commodi itaque deleniti!';
 tagSection.appendChild(tagP);
+
+//Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+let secondTagSection = document.createElement('section');
+secondTagSection.className = 'left-content';
+tagMain.appendChild(secondTagSection);
+
+// Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+let thirdTagSection = document.createElement('section');
+thirdTagSection.className = 'right-content';
+tagMain.appendChild(thirdTagSection);
