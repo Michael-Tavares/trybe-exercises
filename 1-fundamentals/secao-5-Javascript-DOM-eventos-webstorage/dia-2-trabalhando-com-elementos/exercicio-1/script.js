@@ -11,3 +11,8 @@ const tagMain = document.createElement('main');
 tagMain.className = 'main-content';
 bodyTag.appendChild(tagMain);
 
+//Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+
+const tagSection = document.createElement('section');
+tagSection.className = 'center-content';
+tagMain.appendChild(tagSection);
