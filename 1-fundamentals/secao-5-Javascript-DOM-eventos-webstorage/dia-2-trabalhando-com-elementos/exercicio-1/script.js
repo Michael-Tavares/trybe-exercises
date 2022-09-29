@@ -41,3 +41,22 @@ let image = document.createElement('img');
 image.src = 'https://picsum.photos/200'
 image.className = 'small-image';
 secondTagSection.appendChild(image);
+
+//Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+let listNoOrdened = document.createElement('ul');
+thirdTagSection.appendChild(listNoOrdened)
+
+let number = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+for (let index in number) {
+  let tagLi = document.createElement('li');
+  tagLi.innerText = number[index];
+  listNoOrdened.appendChild(tagLi);
+}
+
+//Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
+for (let index = 1; index <= 3; index += 1) {
+  let tagH3 = document.createElement('h3');
+  tagH3.innerHTML = 'Olá'+ ' ' + index;
+  tagMain.appendChild(tagH3);
+}
