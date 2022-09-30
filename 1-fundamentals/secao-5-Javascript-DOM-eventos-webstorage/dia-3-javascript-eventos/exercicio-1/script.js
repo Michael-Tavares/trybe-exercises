@@ -38,3 +38,13 @@ function createDays() {
 }
 
 createDays();
+
+function holidayDays() {
+  const feriados = document.createElement('button');
+  feriados.innerText = 'Feriados';
+  feriados.id = 'btn-holiday';
+  const divButtons = document.getElementsByClassName('buttons-container')[0];
+  divButtons.appendChild(feriados);
+}
+
+holidayDays();
