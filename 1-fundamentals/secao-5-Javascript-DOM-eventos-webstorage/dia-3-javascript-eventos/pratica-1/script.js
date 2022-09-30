@@ -9,6 +9,12 @@ const myWebpage = document.getElementById('my-spotrybefy');
 //  - Note que uma das caixas está um pouco acima das outras. Por que isso ocorre?
 
 // - Crie uma função que adicione a classe 'tech' ao elemento `li` quando for clicado.
+function liClick() {
+  secondLi.className = 'tech';
+  thirdLi.className = 'tech';
+}
+secondLi.addEventListener('click', liClick);
+
 //  - Deve existir apenas um elemento com a classe 'tech'. Como você faz isso?
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
@@ -20,7 +26,15 @@ const myWebpage = document.getElementById('my-spotrybefy');
 
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+function alteraCor() {
+  myWebpage.style.color = 'red';
+}
+myWebpage.addEventListener('mouseover', alteraCor);
 
+function removeColor() {
+  myWebpage.style.color = 'white';
+}
+myWebpage.addEventListener('mouseleave', removeColor);
 // Segue abaixo um exemplo do uso de event.target:
 
 
