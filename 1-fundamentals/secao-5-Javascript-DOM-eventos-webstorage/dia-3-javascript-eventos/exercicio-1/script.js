@@ -51,7 +51,7 @@ holidayDays();
 
 function changeColorHoliday() {
   const daysHoliday = document.querySelectorAll('.holiday');
-  const eventlist = document.getElementsByClassName('buttons-container')[0];
+  const eventlist = document.getElementById('btn-holiday');
   let color = 'red';
   let padraoColor = 'rgb(238,238,238)';
 
@@ -69,11 +69,29 @@ function changeColorHoliday() {
 changeColorHoliday();
 
 function createBottonFriday() {
-  const sextafeira = document.createElement('button');
-  sextafeira.innerText = 'Sexta-feira';
-  sextafeira.id = 'btn-friday';
+  const sextaFeira = document.createElement('button');
+  sextaFeira.innerText = 'Sexta-feira';
+  sextaFeira.id = 'btn-friday';
   const divButtons = document.getElementsByClassName('buttons-container')[0];
-  divButtons.appendChild(sextafeira);
+  divButtons.appendChild(sextaFeira);
 }
 
 createBottonFriday();
+
+function changeColorFriday(sexta) {
+  const getFridays = document.getElementById('btn-friday');
+  const changeColor = document.getElementsByClassName('friday');
+  let text = 'UHUUU';
+  getFridays.addEventListener('click', function(){
+    for (let index = 0; index < changeColor.length; index += 1) {
+      if (changeColor[index].innerText !== text) {
+        changeColor[index].innerText = text;
+      } else {
+        changeColor[index].innerText = sexta[index];
+      }
+    }
+  })
+}
+let felicidade = [ 4, 11, 18, 25 ];
+
+changeColorFriday(felicidade);
