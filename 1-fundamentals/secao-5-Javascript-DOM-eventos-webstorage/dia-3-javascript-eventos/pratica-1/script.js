@@ -20,10 +20,20 @@ secondLi.addEventListener('click', liClick);
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
 
+function alteraTexto() {
+  const texto = document.querySelector('.tech');
+  texto.innerText = input.value;
+}
+
+input.addEventListener('keyup', alteraTexto);
+
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', function() {
+  window.location.replace('https://michael-tavares.github.io/')
+})
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
 function alteraCor() {
