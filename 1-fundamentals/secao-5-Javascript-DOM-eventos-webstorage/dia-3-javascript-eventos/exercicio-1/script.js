@@ -48,3 +48,22 @@ function holidayDays() {
 }
 
 holidayDays();
+
+function changeColorHoliday() {
+  const daysHoliday = document.querySelectorAll('.holiday');
+  const eventlist = document.getElementsByClassName('buttons-container')[0];
+  let color = 'red';
+  let padraoColor = 'rgb(238,238,238)';
+
+  eventlist.addEventListener('click', function() {
+    for (let index = 0; index < daysHoliday.length; index += 1) {
+      if(daysHoliday[index].style.backgroundColor === color) {
+        daysHoliday[index].style.backgroundColor = padraoColor;
+      } else {
+        daysHoliday[index].style.backgroundColor = color;
+      }
+    }
+  })
+}
+
+changeColorHoliday();
