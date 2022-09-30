@@ -67,3 +67,13 @@ function changeColorHoliday() {
 }
 
 changeColorHoliday();
+
+function createBottonFriday() {
+  const sextafeira = document.createElement('button');
+  sextafeira.innerText = 'Sexta-feira';
+  sextafeira.id = 'btn-friday';
+  const divButtons = document.getElementsByClassName('buttons-container')[0];
+  divButtons.appendChild(sextafeira);
+}
+
+createBottonFriday();
