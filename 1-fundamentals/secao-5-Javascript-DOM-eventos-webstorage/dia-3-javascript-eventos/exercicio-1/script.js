@@ -1,3 +1,6 @@
+// variáveis globais
+const felicidade = [ 4, 11, 18, 25 ];
+
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
@@ -11,8 +14,6 @@ function createDaysOfTheWeek() {
   };
 }
 
-createDaysOfTheWeek();
-
 function createDays() {
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
@@ -24,6 +25,7 @@ function createDays() {
     
     listaDias.innerHTML = dias;
     listaDias.className = 'day' + decemberDaysList[index];
+    listaDias.id = 'daysz';
 
     if (listaDias.className === 'day24' || listaDias.className === 'day25' || listaDias.className === 'day31') {
       listaDias.classList.add('holiday');
@@ -37,8 +39,6 @@ function createDays() {
   }
 }
 
-createDays();
-
 function holidayDays() {
   const feriados = document.createElement('button');
   feriados.innerText = 'Feriados';
@@ -46,8 +46,6 @@ function holidayDays() {
   const divButtons = document.getElementsByClassName('buttons-container')[0];
   divButtons.appendChild(feriados);
 }
-
-holidayDays();
 
 function changeColorHoliday() {
   const daysHoliday = document.querySelectorAll('.holiday');
@@ -66,8 +64,6 @@ function changeColorHoliday() {
   })
 }
 
-changeColorHoliday();
-
 function createBottonFriday() {
   const sextaFeira = document.createElement('button');
   sextaFeira.innerText = 'Sexta-feira';
@@ -75,8 +71,6 @@ function createBottonFriday() {
   const divButtons = document.getElementsByClassName('buttons-container')[0];
   divButtons.appendChild(sextaFeira);
 }
-
-createBottonFriday();
 
 function changeColorFriday(sexta) {
   const getFridays = document.getElementById('btn-friday');
@@ -92,6 +86,31 @@ function changeColorFriday(sexta) {
     }
   })
 }
-let felicidade = [ 4, 11, 18, 25 ];
 
+const zoomIn = () => {
+  let getZoom = document.querySelectorAll('#daysz');
+  for (let index = 0; index < getZoom.length; index += 1) {
+    getZoom[index].addEventListener('mouseover', () => {
+      getZoom[index].style.fontSize = '27px';
+    })
+  }
+}
+  
+const zoomOut = () => {
+  let getZoomOut = document.querySelectorAll('#daysz');
+  for (let index = 0; index < getZoomOut.length; index +=1) {
+    getZoomOut[index].addEventListener('mouseout', () => {
+      getZoomOut[index].style.fontSize = '20px';
+    })
+  }
+}
+
+//chama as funções
+createDaysOfTheWeek();
+createDays();
+holidayDays();
+changeColorHoliday();
+createBottonFriday();
 changeColorFriday(felicidade);
+zoomIn();
+zoomOut();
