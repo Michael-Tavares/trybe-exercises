@@ -133,6 +133,20 @@ const legendColor = (cor) => {
   myTasks.appendChild(taskDiv);
 }
 
+// função que seleciona uma tarefa
+const selectedTasks = () => {
+  let takeTask = document.getElementsByClassName('task selected');
+  let selected = document.querySelector('.task');
+  selected.addEventListener('click', function(event) {
+    if (takeTask.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  })
+}
+
+
 //chama as funções
 createDaysOfTheWeek();
 createDays();
@@ -144,3 +158,5 @@ zoomIn();
 zoomOut();
 calendarTasks(['Estudar na Trybe']);
 legendColor('red');
+selectedTasks();
+
