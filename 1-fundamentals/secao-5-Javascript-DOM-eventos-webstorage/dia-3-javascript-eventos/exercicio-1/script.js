@@ -1,6 +1,9 @@
 // variáveis globais
 const felicidade = [ 4, 11, 18, 25 ];
+const myTasks = document.querySelector('.my-tasks');
 
+
+//  função que cria os dias da semana
 function createDaysOfTheWeek() {
   const weekDays = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado']
   const weekDaysList = document.querySelector('.week-days');
@@ -14,6 +17,7 @@ function createDaysOfTheWeek() {
   };
 }
 
+// função que cria os dias, atribui classe e separa feriados e sexta feira
 function createDays() {
   const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
@@ -39,6 +43,7 @@ function createDays() {
   }
 }
 
+// função dos feriados
 function holidayDays() {
   const feriados = document.createElement('button');
   feriados.innerText = 'Feriados';
@@ -47,6 +52,7 @@ function holidayDays() {
   divButtons.appendChild(feriados);
 }
 
+// função para mudar a cor dos feriados
 function changeColorHoliday() {
   const daysHoliday = document.querySelectorAll('.holiday');
   const eventlist = document.getElementById('btn-holiday');
@@ -64,6 +70,7 @@ function changeColorHoliday() {
   })
 }
 
+// função para criar botão de sexta feira
 function createBottonFriday() {
   const sextaFeira = document.createElement('button');
   sextaFeira.innerText = 'Sexta-feira';
@@ -72,6 +79,7 @@ function createBottonFriday() {
   divButtons.appendChild(sextaFeira);
 }
 
+// função para mudar o texto de sexta feira
 function changeColorFriday(sexta) {
   const getFridays = document.getElementById('btn-friday');
   const changeColor = document.getElementsByClassName('friday');
@@ -87,6 +95,7 @@ function changeColorFriday(sexta) {
   })
 }
 
+// funçao para dar zoom
 const zoomIn = () => {
   let getZoom = document.querySelectorAll('#daysz');
   for (let index = 0; index < getZoom.length; index += 1) {
@@ -95,7 +104,8 @@ const zoomIn = () => {
     })
   }
 }
-  
+
+// função para retornar zoom
 const zoomOut = () => {
   let getZoomOut = document.querySelectorAll('#daysz');
   for (let index = 0; index < getZoomOut.length; index +=1) {
@@ -105,15 +115,22 @@ const zoomOut = () => {
   }
 }
 
+// função que cria tarefas no calendário
 const calendarTasks = (string) => {
-  const myTasks = document.querySelector('.my-tasks');
   for (let index = 0; index < string.length; index += 1) {
     let createTasks = document.createElement('span');
-    createTasks.style.display = 'block';
     createTasks.innerText = string[index];
     myTasks.appendChild(createTasks);
   }
   
+}
+
+// função que cria cor de legenda para as tarefas
+const legendColor = (cor) => {
+  const taskDiv = document.createElement('div');
+  taskDiv.className = 'task';
+  taskDiv.style.backgroundColor = cor;
+  myTasks.appendChild(taskDiv);
 }
 
 //chama as funções
@@ -125,4 +142,5 @@ createBottonFriday();
 changeColorFriday(felicidade);
 zoomIn();
 zoomOut();
-calendarTasks(['Estudar na Trybe', 'Codar', 'Jogar']);
+calendarTasks(['Estudar na Trybe']);
+legendColor('red');
