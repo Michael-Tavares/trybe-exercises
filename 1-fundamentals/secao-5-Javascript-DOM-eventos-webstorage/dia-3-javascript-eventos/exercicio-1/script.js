@@ -105,6 +105,17 @@ const zoomOut = () => {
   }
 }
 
+const calendarTasks = (string) => {
+  const myTasks = document.querySelector('.my-tasks');
+  for (let index = 0; index < string.length; index += 1) {
+    let createTasks = document.createElement('span');
+    createTasks.style.display = 'block';
+    createTasks.innerText = string[index];
+    myTasks.appendChild(createTasks);
+  }
+  
+}
+
 //chama as funções
 createDaysOfTheWeek();
 createDays();
@@ -114,3 +125,4 @@ createBottonFriday();
 changeColorFriday(felicidade);
 zoomIn();
 zoomOut();
+calendarTasks(['Estudar na Trybe', 'Codar', 'Jogar']);
