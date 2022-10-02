@@ -146,6 +146,24 @@ const selectedTasks = () => {
   })
 }
 
+// função que atribui cor da tarefa do dia ao calendário
+const atributColort = () => {
+  let getTask = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let getTaskDiv = document.querySelector('.task');
+  let getTaskColor = getTaskDiv.style.backgroundColor;
+  console.log(getTaskColor)
+
+  days.addEventListener('click', (event) => {
+    let eventTargetColor = event.target.style.color;
+    if (getTask.length > 0 && eventTargetColor !== getTaskColor) {
+      let cor = getTask[0].style.backgroundColor;
+      event.target.style.color = cor;
+    } else if (eventTargetColor === getTaskColor) {
+      event.target.style.color = 'rgb(119, 119, 119)';
+    }
+  })
+}
 
 //chama as funções
 createDaysOfTheWeek();
@@ -159,4 +177,5 @@ zoomOut();
 calendarTasks(['Estudar na Trybe']);
 legendColor('red');
 selectedTasks();
+atributColort();
 
