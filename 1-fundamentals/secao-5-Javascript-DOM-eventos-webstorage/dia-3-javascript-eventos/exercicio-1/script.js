@@ -165,6 +165,36 @@ const atributColort = () => {
   })
 }
 
+//função que adiciona compromissos ao calendário
+const addCompromisses = () => {
+  let caixaCompromisso = document.getElementById('task-input');
+  let enviaCompromisso = document.getElementById('btn-add');
+  let getTaskList = document.querySelector('.task-list');
+
+  enviaCompromisso.addEventListener('click', () => {
+    if (caixaCompromisso.value.length > 0) {
+      let newLi = document.createElement('li');
+      newLi.innerText = caixaCompromisso.value;
+
+      getTaskList.appendChild(newLi);
+      caixaCompromisso.value = '';
+    } else {
+      alert('Erro: digite ao menos 1 caractere');
+    }
+  })
+
+  caixaCompromisso.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter' && caixaCompromisso.value.length > 0) {
+      let novoLi = document.createElement('li');
+      novoLi.innerText = caixaCompromisso.value;
+
+      getTaskList.appendChild(novoLi);
+      caixaCompromisso.value = '';
+    }
+  })
+  
+}
+
 //chama as funções
 createDaysOfTheWeek();
 createDays();
@@ -178,4 +208,5 @@ calendarTasks(['Estudar na Trybe']);
 legendColor('red');
 selectedTasks();
 atributColort();
+addCompromisses();
 
