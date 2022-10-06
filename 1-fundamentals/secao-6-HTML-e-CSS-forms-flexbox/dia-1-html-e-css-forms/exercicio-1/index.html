@@ -18,10 +18,10 @@
       <p>Informações para contato:</p>
       
       <label for="user-name" class="content-label">Digite seu nome:</label>
-      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome" required>
+      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome" required min="10" max="40">
       
       <label for="e-mail" class="content-label">Email:</label>
-      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite sua senha" required>
+      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite seu e-mail" required min="10" max="50">
       
     </section>
     <section class="content-section">
@@ -62,7 +62,7 @@
     </section>
     <section class="content-section">
       <button type="submit" class="content-button" id="submitbutton">Enviar</button>
-      <button type="clear" class="content-button-clear" id="clearbutton">Limpar</button>
+      <button type="reset" class="content-button-clear" id="clearbutton">Limpar</button>
     </section>
       
   </form>
