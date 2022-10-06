@@ -15,28 +15,35 @@
   </header>
   <form action="" method="get" class="content-form">
     <section class="content-section">
+      <p>Informações para contato:</p>
       
       <label for="user-name" class="content-label">Digite seu nome:</label>
-      <input type="text" name="nome" id="user-name">
+      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome">
       
       <label for="e-mail" class="content-label">Email:</label>
-      <input type="email" name="email" id="e-mail">
+      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite sua senha">
       
     </section>
     <section class="content-section">
+      <p>Destino Preferido:</p>
       
       <label for="city" class="content-label">Cidade</label>
-      <input type="radio" name="preference" id="city">
+      <input type="radio" name="preference" id="city" value="cidade">
 
       <label for="camp" class="content-label">Campo</label>
-      <input type="radio" name="preference" id="camp">
+      <input type="radio" name="preference" id="camp" value="campo">
 
       <label for="beach" class="content-label">Praia</label>
-      <input type="radio" name="preference" id="beach">
+      <input type="radio" name="preference" id="beach" value="praia">
 
       <label for="mont" class="content-label">Montanhas</label>
-      <input type="radio" name="preference" id="mont">
+      <input type="radio" name="preference" id="mont" value="montanhas">
 
+    </section>
+    <section class="content-section">
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+
+      <textarea name="user-textarea" id="textareaf" cols="20" rows="5" maxlength="500"></textarea>
     </section>
   </form>
 </body>

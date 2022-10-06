@@ -21,7 +21,7 @@
 }
 
 .content-header p {
-  font-size: 25px;
+  font-size: 22px;
   padding: 20px;
 }
 
@@ -35,8 +35,7 @@
 }
 
 .content-section {
-  
-  width: 80%;
+  width: 95%;
   height: 10%;
   padding: 10px;
   margin-top: 30px;
@@ -44,8 +43,28 @@
   margin-right: auto;
 }
 
+.content-section p {
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .content-label {
   color: white;
   font-size: 25px;
   margin-left: 85px;
+}
+
+.content-input {
+  font-size: 18px;
+  width: 300px;
+}
+
+textarea {
+  width: 80%;
+  margin-left: 90px;
+  font-size: 20px;
+  resize: none;
+  display: block;
 }
