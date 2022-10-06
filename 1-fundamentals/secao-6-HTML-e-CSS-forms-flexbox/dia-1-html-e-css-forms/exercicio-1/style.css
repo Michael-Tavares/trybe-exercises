@@ -69,3 +69,13 @@ textarea {
   resize: none;
   display: block;
 }
+
+.content-button {
+  text-align: center;
+  width: 50%;
+  height: 50px;
+  margin-left: 26%;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}

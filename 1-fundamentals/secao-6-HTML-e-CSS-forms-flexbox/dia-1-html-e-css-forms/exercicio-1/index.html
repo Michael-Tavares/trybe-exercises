@@ -18,10 +18,10 @@
       <p>Informações para contato:</p>
       
       <label for="user-name" class="content-label">Digite seu nome:</label>
-      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome">
+      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome" required>
       
       <label for="e-mail" class="content-label">Email:</label>
-      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite sua senha">
+      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite sua senha" required>
       
     </section>
     <section class="content-section">
@@ -43,14 +43,25 @@
     <section class="content-section">
       <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
 
-      <textarea name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500"></textarea>
+      <textarea name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500" required></textarea>
     </section>
 
     <section class="content-section">
       <p>Qual a melhor data para realizar sua viagem?</p>
       
       <label for="user-date" class="content-label">Data:</label>
-      <input type="date" id="user-date" name="data" class="content-input">
+      <input type="date" id="user-date" name="data" class="content-input" required>
+    </section>
+    <section class="content-section">
+
+      <label for="checktrybe" class="content-label">Gostaria de receber novidades da Trybe?</label>
+      <input type="checkbox" name="novidades" id="checktrybe">
+
+      <label for="user-images" class="content-label">Concordo com o uso de imagem</label>
+      <input type="checkbox" name="images" id="user-images" required>
+    </section>
+    <section class="content-section">
+      <button type="submit" class="content-button">Enviar</button>
     </section>
   </form>
 </body>
