@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(22, 20, 20);
+}
+
 .content-header {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -72,9 +76,19 @@ textarea {
 
 .content-button {
   text-align: center;
-  width: 50%;
+  width: 40%;
   height: 50px;
-  margin-left: 26%;
+  float: right;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.content-button-clear {
+  text-align: center;
+  width: 40%;
+  height: 50px;
+  margin-left: 50px;
   font-size: 20px;
   color: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
