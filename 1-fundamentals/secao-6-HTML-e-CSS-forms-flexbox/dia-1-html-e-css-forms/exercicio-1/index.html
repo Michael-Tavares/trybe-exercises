@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./script.js"></script>
+  <title>Exercício - Criar Formulário</title>
+</head>
+<body>
+  <header class="content-header">
+    <h1>TrybeTrip - Concorra a uma viagem!</h1>
+    <p>Preencha o formulário abaixo e teste sua sorte!</p>
+  </header>
+  <form action="" method="get" class="content-form">
+    <section class="content-section">
+      <p>Informações para contato:</p>
+      
+      <label for="user-name" class="content-label">Digite seu nome:</label>
+      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome" required min="10" max="40">
+      
+      <label for="e-mail" class="content-label">Email:</label>
+      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite seu e-mail" required min="10" max="50">
+      
+    </section>
+    <section class="content-section">
+      <p>Destino Preferido:</p>
+      
+      <label for="city" class="content-label">Cidade</label>
+      <input type="radio" name="preference" id="city" value="cidade">
+
+      <label for="camp" class="content-label">Campo</label>
+      <input type="radio" name="preference" id="camp" value="campo">
+
+      <label for="beach" class="content-label">Praia</label>
+      <input type="radio" name="preference" id="beach" value="praia">
+
+      <label for="mont" class="content-label">Montanhas</label>
+      <input type="radio" name="preference" id="mont" value="montanhas">
+
+    </section>
+    <section class="content-section">
+      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+
+      <textarea name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500" required></textarea>
+    </section>
+
+    <section class="content-section">
+      <p>Qual a melhor data para realizar sua viagem?</p>
+      
+      <label for="user-date" class="content-label">Data:</label>
+      <input type="date" id="user-date" name="data" class="content-input" required>
+    </section>
+    <section class="content-section">
+
+      <label for="checktrybe" class="content-label">Gostaria de receber novidades da Trybe?</label>
+      <input type="checkbox" name="novidades" id="checktrybe">
+
+      <label for="user-images" class="content-label">Concordo com o uso de imagem</label>
+      <input type="checkbox" name="images" id="user-images" required>
+    </section>
+    <section class="content-section">
+      <button type="submit" class="content-button" id="submitbutton">Enviar</button>
+      <button type="reset" class="content-button-clear" id="clearbutton">Limpar</button>
+    </section>
+      
+  </form>
+</body>
+</html>
