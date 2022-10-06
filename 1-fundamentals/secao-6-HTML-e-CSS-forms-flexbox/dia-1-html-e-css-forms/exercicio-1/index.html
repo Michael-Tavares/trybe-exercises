@@ -13,8 +13,31 @@
     <h1>TrybeTrip - Concorra a uma viagem!</h1>
     <p>Preencha o formulário abaixo e teste sua sorte!</p>
   </header>
-  <form action="" method="get">
-    
+  <form action="" method="get" class="content-form">
+    <section class="content-section">
+      
+      <label for="user-name" class="content-label">Digite seu nome:</label>
+      <input type="text" name="nome" id="user-name">
+      
+      <label for="e-mail" class="content-label">Email:</label>
+      <input type="email" name="email" id="e-mail">
+      
+    </section>
+    <section class="content-section">
+      
+      <label for="city" class="content-label">Cidade</label>
+      <input type="radio" name="preference" id="city">
+
+      <label for="camp" class="content-label">Campo</label>
+      <input type="radio" name="preference" id="camp">
+
+      <label for="beach" class="content-label">Praia</label>
+      <input type="radio" name="preference" id="beach">
+
+      <label for="mont" class="content-label">Montanhas</label>
+      <input type="radio" name="preference" id="mont">
+
+    </section>
   </form>
 </body>
 </html>
