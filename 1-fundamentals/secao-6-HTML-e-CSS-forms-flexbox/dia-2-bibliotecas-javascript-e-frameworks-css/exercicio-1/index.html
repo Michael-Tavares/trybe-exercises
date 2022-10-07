@@ -71,14 +71,21 @@
       <label for="user-date" class="content-label">Data:</label>
       <input type="date" id="user-date" name="data" class="content-input" required>
     </section>
-    <section class="content-section">
 
-      <label for="checktrybe" class="content-label">Gostaria de receber novidades da Trybe?</label>
-      <input type="checkbox" name="novidades" id="checktrybe">
+    <section>
 
-      <label for="user-images" class="content-label">Concordo com o uso de imagem</label>
-      <input type="checkbox" name="images" id="user-images" required>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkbox1" value="">
+        <label for="checkbox1" class="form-check-label">Gostaria de receber novidades da Trybe?</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkbox2" value="">
+        <label for="checkbox2" class="form-check-label">Concordo com o uso de imagem</label>
+      </div>
+
     </section>
+    
     <section class="content-section">
       <button type="submit" class="content-button" id="submitbutton">Enviar</button>
       <button type="reset" class="content-button-clear" id="clearbutton">Limpar</button>
