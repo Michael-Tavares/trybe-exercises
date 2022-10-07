@@ -14,7 +14,7 @@
     <h1>TrybeTrip - Concorra a uma viagem!</h1>
     <p>Preencha o formulário abaixo e teste sua sorte!</p>
   </header>
-  <form action="" method="get" class="row g-3">
+  <form action="" method="get" class="row g-2">
     <section>
       <p>Informações para contato:</p>
     <div class="row g-1">
@@ -59,17 +59,18 @@
 
     </section>
 
-    <section class="content-section">
-      <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-
-      <textarea name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500" required></textarea>
+    <section>
+      <div class="mb-3">
+        <label for="textareaf" class="form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea class="form-control" name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500" required></textarea>
+      </div>
     </section>
 
-    <section class="content-section">
-      <p>Qual a melhor data para realizar sua viagem?</p>
-      
-      <label for="user-date" class="content-label">Data:</label>
-      <input type="date" id="user-date" name="data" class="content-input" required>
+    <section>
+      <div class="mb-3">
+        <label for="user-date" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+        <input type="date" id="user-date" name="data" class="form-data" required>
+      </div>
     </section>
 
     <section>
@@ -85,10 +86,10 @@
       </div>
 
     </section>
-    
-    <section class="content-section">
-      <button type="submit" class="content-button" id="submitbutton">Enviar</button>
-      <button type="reset" class="content-button-clear" id="clearbutton">Limpar</button>
+
+    <section>
+      <button type="submit" class="btn btn-primary btn-lg" id="submitbutton">Enviar</button>
+      <button type="reset" class="btn btn-secondary btn-lg" id="clearbutton">Limpar</button>
     </section>
       
   </form>
