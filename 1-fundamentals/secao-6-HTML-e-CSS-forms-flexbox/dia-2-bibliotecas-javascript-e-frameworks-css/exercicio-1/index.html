@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<link rel="stylesheet" href="./style.css"> 
+  <script defer src="./script.js"></script>-->
+  <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+  <title>Exercício - Criar Formulário</title>
+</head>
+<body>
+  <form action="" method="get" class="row g-2">
+    <header>
+      <h1>TrybeTrip - Concorra a uma viagem!</h1>
+      <p>Preencha o formulário abaixo e teste sua sorte!</p>
+    </header>
+    <section>
+      <p>Informações para contato:</p>
+    <div class="row g-1">
+      <div class="col">
+        <div class="form-outline">
+          <label for="user-name" class="form-label">Digite seu nome:</label>
+          <input type="text" name="nome" id="user-name" class="form-control" placeholder="Digite seu nome" required min="10" max="40">
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="form-outline">
+          <label for="e-mail" class="form-label">Email:</label>
+          <input type="email" name="email" id="e-mail" class="form-control" placeholder="Digite seu e-mail" required min="10" max="50">
+        </div>
+      </div>
+    </div>
+    </section>
+    <section>
+
+      <p>Destino Preferido:</p>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="preference" id="flexRadioDefault1" value="cidade" class="form-check-input">
+          <label for="flexRadioDefault1" class="form-check-label">Cidade</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="preference" id="camp" value="campo" class="form-check-input">
+          <label for="camp" class="form-check-label">Campo</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="preference" id="beach" value="praia" class="form-check-input">
+          <label for="beach" class="form-check-label">Praia</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <input type="radio" name="preference" id="mont" value="montanhas" class="form-check-input">
+          <label for="mont" class="form-check-label">Montanhas</label>
+        </div>
+
+    </section>
+
+    <section>
+      <div class="mb-3">
+        <label for="textareaf" class="form-label">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <textarea class="form-control" name="user-textarea" id="textareaf" cols="20" rows="3" maxlength="500" required></textarea>
+      </div>
+    </section>
+
+    <section>
+      <div class="mb-3">
+        <label for="datepicker" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+        <input type="text" id="datepicker" name="data" class="pika-single" required>
+      </div>
+    </section>
+
+    <section>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkbox1" value="">
+        <label for="checkbox1" class="form-check-label">Gostaria de receber novidades da Trybe?</label>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkbox2" value="">
+        <label for="checkbox2" class="form-check-label">Concordo com o uso de imagem</label>
+      </div>
+
+      
+
+    </section>
+
+    <section>
+      <button type="submit" class="btn btn-primary btn-lg" id="submitbutton">Enviar</button>
+      <button type="reset" class="btn btn-secondary btn-lg" id="clearbutton">Limpar</button>
+    </section>
+      
+  </form>
+  <script defer src="../bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D/M/YYYY',
+    toString(date, format) {
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
+    parse(dateString, format) {
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+});
+  </script>
+</body>
+</html>
