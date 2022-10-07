@@ -7,6 +7,7 @@
   <!--<link rel="stylesheet" href="./style.css"> 
   <script defer src="./script.js"></script>-->
   <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
   <title>Exercício - Criar Formulário</title>
 </head>
 <body>
@@ -68,8 +69,8 @@
 
     <section>
       <div class="mb-3">
-        <label for="user-date" class="form-label">Qual a melhor data para realizar sua viagem?</label>
-        <input type="date" id="user-date" name="data" class="form-data" required>
+        <label for="datepicker" class="form-label">Qual a melhor data para realizar sua viagem?</label>
+        <input type="text" id="datepicker" name="data" class="pika-single" required>
       </div>
     </section>
 
@@ -85,6 +86,8 @@
         <label for="checkbox2" class="form-check-label">Concordo com o uso de imagem</label>
       </div>
 
+      
+
     </section>
 
     <section>
@@ -93,6 +96,26 @@
     </section>
       
   </form>
-  <script src="../bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <script defer src="../bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script>
+    var picker = new Pikaday({
+    field: document.getElementById('datepicker'),
+    format: 'D/M/YYYY',
+    toString(date, format) {
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        return `${day}/${month}/${year}`;
+    },
+    parse(dateString, format) {
+        const parts = dateString.split('/');
+        const day = parseInt(parts[0], 10);
+        const month = parseInt(parts[1], 10) - 1;
+        const year = parseInt(parts[2], 10);
+        return new Date(year, month, day);
+    }
+});
+  </script>
 </body>
 </html>
