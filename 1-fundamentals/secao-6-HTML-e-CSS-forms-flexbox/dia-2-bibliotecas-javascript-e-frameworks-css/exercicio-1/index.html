@@ -14,16 +14,24 @@
     <h1>TrybeTrip - Concorra a uma viagem!</h1>
     <p>Preencha o formulário abaixo e teste sua sorte!</p>
   </header>
-  <form action="" method="get" class="content-form">
-    <section class="content-section">
+  <form action="" method="get" class="row g-3">
+    <section>
       <p>Informações para contato:</p>
-      
-      <label for="user-name" class="content-label">Digite seu nome:</label>
-      <input type="text" name="nome" id="user-name" class="content-input" placeholder="Digite seu nome" required min="10" max="40">
-      
-      <label for="e-mail" class="content-label">Email:</label>
-      <input type="email" name="email" id="e-mail" class="content-input" placeholder="Digite seu e-mail" required min="10" max="50">
-      
+    <div class="row g-1">
+      <div class="col">
+        <div class="form-outline">
+          <label for="user-name" class="form-label">Digite seu nome:</label>
+          <input type="text" name="nome" id="user-name" class="form-control" placeholder="Digite seu nome" required min="10" max="40">
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="form-outline">
+          <label for="e-mail" class="form-label">Email:</label>
+          <input type="email" name="email" id="e-mail" class="form-control" placeholder="Digite seu e-mail" required min="10" max="50">
+        </div>
+      </div>
+    </div>
     </section>
     <section>
 
@@ -50,7 +58,7 @@
         </div>
 
     </section>
-    
+
     <section class="content-section">
       <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
 
