@@ -19,8 +19,14 @@
 }
 
 .container-header {
-  background-color: rgb(75, 21, 21);
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.container-section-one {
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
 }
