@@ -74,3 +74,32 @@ footer p {
   font-size: 16px;
   text-align: justify;
 }
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .container header p {
+    font-size: 40px;
+  }
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  aside h2 {
+    font-size: 30px;
+  }
+  .main-content h1 {
+    font-size: 33px;
+  }
+  .aside-one ul li, .aside-two ul li {
+    font-size: 20px;
+  }
+  .main-content p {
+    font-size: 20px;
+  }
+  footer h3 {
+    font-size: 23px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
