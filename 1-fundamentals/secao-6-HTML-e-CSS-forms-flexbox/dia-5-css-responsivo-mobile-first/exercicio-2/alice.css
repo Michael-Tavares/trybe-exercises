@@ -1,0 +1,146 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 90%;
+  background-color: azure;
+  margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container header p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container header nav ul li {
+  font-size: 22px;
+  list-style: none;
+  padding: 8px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+aside h2 {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.aside-one, .aside-two {
+  margin-top: 40px;
+}
+
+.aside-one ul li, .aside-two ul li {
+  font-size: 18px;
+  padding: 2px;
+}
+
+.main-content {
+  margin-top: 40px;
+}
+
+.main-content h1 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-content p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+footer {
+  padding-top: 20px;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+footer p {
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .container header p {
+    font-size: 40px;
+  }
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  aside h2 {
+    font-size: 30px;
+  }
+  .main-content h1 {
+    font-size: 33px;
+  }
+  .aside-one ul li, .aside-two ul li {
+    font-size: 20px;
+  }
+  .main-content p {
+    font-size: 20px;
+  }
+  footer h3 {
+    font-size: 23px;
+  }
+  footer p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+  }
+  .container header p {
+    font-size: 50px;
+  }
+  .container-aside {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  aside h2 {
+    font-size: 40px;
+  }
+  .main-content h1 {
+    font-size: 37px;
+  }
+  .aside-one ul li, .aside-two ul li {
+    font-size: 23px;
+  }
+  .main-content p {
+    font-size: 23px;
+  }
+  footer h3 {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,106 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+}
+
+article {
+  font-size: 18px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+main {
+  padding: 10px;
+}
+
+section {
+  padding: 10px
+}
+
+figure {
+	margin: 0;
+  padding: 20px;
+}
+
+figcaption {
+  font-size: .8em;
+}
+
+@media screen and (min-width: 550px) and (max-width: 1000px) {
+  body {
+    background-color: rgb(80, 77, 77);
+  }
+  figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  article {
+    font-size: 25px;
+  }
+  figcaption {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1001px){
+  body {
+    background-color: rgb(123, 123, 128);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section {
+    text-align: center;
+  }
+  figure {
+    display: inline-block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  article {
+    font-size: 25px;
+  }
+  figcaption {
+    font-size: 23px;
+  }
+}
