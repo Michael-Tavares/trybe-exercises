@@ -103,3 +103,44 @@ footer p {
     font-size: 18px;
   }
 }
+
+@media screen and (min-width: 1001px) {
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+  }
+  .container header p {
+    font-size: 50px;
+  }
+  .container-aside {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .container header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  aside h2 {
+    font-size: 40px;
+  }
+  .main-content h1 {
+    font-size: 37px;
+  }
+  .aside-one ul li, .aside-two ul li {
+    font-size: 23px;
+  }
+  .main-content p {
+    font-size: 23px;
+  }
+  footer h3 {
+    font-size: 25px;
+  }
+  footer p {
+    font-size: 20px;
+  }
+}
