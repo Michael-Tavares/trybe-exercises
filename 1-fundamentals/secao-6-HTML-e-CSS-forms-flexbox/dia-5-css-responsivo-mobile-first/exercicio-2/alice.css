@@ -10,9 +10,10 @@ body {
   width: 90%;
   background-color: azure;
   margin: auto;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.container p {
+.container header p {
   font-size: 30px;
   text-align: center;
 }
@@ -30,4 +31,18 @@ body {
   background-color: aliceblue;
   border: 1px solid black;
   border-radius: 3px;
+}
+
+aside h2 {
+  font-size: 24px;
+  text-align: justify;
+}
+
+.aside-one, .aside-two {
+  margin-top: 40px;
+}
+
+.aside-one ul li, .aside-two ul li {
+  font-size: 18px;
+  padding: 2px;
 }
