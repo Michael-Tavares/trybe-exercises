@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 90%;
+  background-color: azure;
+  margin: auto;
+}
+
+.container p {
+  font-size: 30px;
+  text-align: center;
+}
+
+.container header nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.container header nav ul li {
+  font-size: 22px;
+  list-style: none;
+  padding: 8px;
+  background-color: aliceblue;
+  border: 1px solid black;
+  border-radius: 3px;
+}
